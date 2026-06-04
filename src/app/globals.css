@@ -4,7 +4,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* ─── Brand gradient (azul → roxo, 45°) ─────────────────────────────────────
+/* ─── Brand gradient (azul → roxo, -45°) ─────────────────────────────────────
    Azul:  #3B82F6  →  oklch(0.62 0.21 255)
    Roxo:  #7C3AED  →  oklch(0.50 0.28 293)
    Uso:   bg-gradient, border-gradient, text-gradient, logo fill
@@ -13,7 +13,7 @@
 :root {
   /* Superfícies */
   --background: oklch(0.985 0 0);
-  --foreground: oklch(0.14 0.015 293);
+  --foreground: oklch(37.53% 0.00004 271.152);
 
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.14 0.015 293);
@@ -67,7 +67,7 @@
   --sidebar-ring: oklch(0.5 0.28 293);
 
   /* Gradiente da marca */
-  --gradient-brand: linear-gradient(45deg, oklch(0.62 0.21 255), oklch(0.5 0.28 293));
+  --gradient-brand: linear-gradient(-45deg, oklch(0.5 0.28 293), oklch(0.62 0.21 255));
 }
 
 .dark {
@@ -123,7 +123,7 @@
   --sidebar-ring: oklch(0.62 0.26 293);
 
   /* Gradiente da marca (mesmo no dark) */
-  --gradient-brand: linear-gradient(45deg, oklch(0.62 0.21 255), oklch(0.5 0.28 293));
+  --gradient-brand: linear-gradient(-45deg, oklch(0.5 0.28 293), oklch(0.62 0.21 255));
 }
 
 @theme inline {
